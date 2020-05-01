@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a057bdcc.chunk.css",
-    "main.js": "/static/js/main.9808e832.chunk.js",
-    "main.js.map": "/static/js/main.9808e832.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.691c657f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.691c657f.js.map",
-    "static/css/2.900676b4.chunk.css": "/static/css/2.900676b4.chunk.css",
-    "static/js/2.8dba9b59.chunk.js": "/static/js/2.8dba9b59.chunk.js",
-    "static/js/2.8dba9b59.chunk.js.map": "/static/js/2.8dba9b59.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8e5d1c949fd6196db8494920d2c6a661.js": "/precache-manifest.8e5d1c949fd6196db8494920d2c6a661.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.900676b4.chunk.css.map": "/static/css/2.900676b4.chunk.css.map",
-    "static/css/main.a057bdcc.chunk.css.map": "/static/css/main.a057bdcc.chunk.css.map",
-    "static/js/2.8dba9b59.chunk.js.LICENSE.txt": "/static/js/2.8dba9b59.chunk.js.LICENSE.txt",
-    "static/media/source-sans-pro.css": "/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2"
+    "main.css": "/mfp-frontend/static/css/main.67ed5b46.chunk.css",
+    "main.js": "/mfp-frontend/static/js/main.1d39ad5d.chunk.js",
+    "main.js.map": "/mfp-frontend/static/js/main.1d39ad5d.chunk.js.map",
+    "runtime-main.js": "/mfp-frontend/static/js/runtime-main.3b903498.js",
+    "runtime-main.js.map": "/mfp-frontend/static/js/runtime-main.3b903498.js.map",
+    "static/css/2.5a998a3f.chunk.css": "/mfp-frontend/static/css/2.5a998a3f.chunk.css",
+    "static/js/2.c503d688.chunk.js": "/mfp-frontend/static/js/2.c503d688.chunk.js",
+    "static/js/2.c503d688.chunk.js.map": "/mfp-frontend/static/js/2.c503d688.chunk.js.map",
+    "index.html": "/mfp-frontend/index.html",
+    "precache-manifest.2761463fc55aeda5ab50cba52621f95f.js": "/mfp-frontend/precache-manifest.2761463fc55aeda5ab50cba52621f95f.js",
+    "service-worker.js": "/mfp-frontend/service-worker.js",
+    "static/css/2.5a998a3f.chunk.css.map": "/mfp-frontend/static/css/2.5a998a3f.chunk.css.map",
+    "static/css/main.67ed5b46.chunk.css.map": "/mfp-frontend/static/css/main.67ed5b46.chunk.css.map",
+    "static/js/2.c503d688.chunk.js.LICENSE.txt": "/mfp-frontend/static/js/2.c503d688.chunk.js.LICENSE.txt",
+    "static/media/source-sans-pro.css": "/mfp-frontend/static/media/SourceSansPro-SemiboldIt.ttf.60e71696.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.691c657f.js",
-    "static/css/2.900676b4.chunk.css",
-    "static/js/2.8dba9b59.chunk.js",
-    "static/css/main.a057bdcc.chunk.css",
-    "static/js/main.9808e832.chunk.js"
+    "static/js/runtime-main.3b903498.js",
+    "static/css/2.5a998a3f.chunk.css",
+    "static/js/2.c503d688.chunk.js",
+    "static/css/main.67ed5b46.chunk.css",
+    "static/js/main.1d39ad5d.chunk.js"
   ]
 }
