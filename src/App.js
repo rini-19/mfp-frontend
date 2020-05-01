@@ -44,12 +44,12 @@ class App extends Component {
     return (
       
          <Switch>
-          <Route exact path = '/' render={(props) =>
+          <Route exact path = '/mfp-frontend' render={(props) =>
             <Login {...props}
               loadClient = {this.loadClient}
             />
           } />
-          <Route exact path = '/dashboard' render = {(props) =>
+          <Route exact path = '/mfp-frontend/dashboard' render = {(props) =>
             <Dashboard {...props}
               updateClient = {this.updateClient}
               clientData = {this.state.client}

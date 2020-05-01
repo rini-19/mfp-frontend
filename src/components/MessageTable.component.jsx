@@ -109,7 +109,7 @@ const MessageTable = ({user_id=null, client_id=null}) =>{
         }
       })
     return () => mounted = false;
-  },[]);
+  });
 
   const columns = React.useMemo(
         () => [

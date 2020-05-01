@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 
 import './login.page.css';
 
@@ -33,7 +33,7 @@ class Login extends Component {
 			.then(data => {
 				if(data.id){
 					this.props.loadClient(data);
-					this.props.history.replace('/dashboard');
+					this.props.history.replace('/mfp-frontend/dashboard');
 				}
 				else 
 					console.log("login component", data);
@@ -60,9 +60,9 @@ class Login extends Component {
 					<div id="alternativeLogin">
 						<label>Or sign in with:</label>
 						<div id="iconGroup">
-							<a href="/" id="facebookIcon"></a>
-							<a href="/" id="twitterIcon"></a>
-							<a href="/" id="googleIcon"></a>
+							<Link to="/" id="facebookIcon"></Link>
+							<Link to="/" id="twitterIcon"></Link>
+							<Link to="/" id="googleIcon"></Link>
 						</div>
 					</div>
 				</div>
