@@ -21,7 +21,7 @@ class Login extends Component {
 	}
 
 	onSubmitChange = () =>{
-		fetch('/login',{
+		fetch('http://mutualfundcalculator.in/nodejsApp/login',{
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
