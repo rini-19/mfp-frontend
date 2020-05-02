@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://mutualfundcalculator.in/nodejsApp",
   "eslintConfig": {
     "extends": "react-app"
   },

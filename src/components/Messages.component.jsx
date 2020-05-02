@@ -47,7 +47,7 @@ class Messages extends Component {
     let data = [];
     res.forEach(r => {
       x = {
-        id: r.id,
+        id: r.fbid,
         name: r.name 
       }
       data.push(x);
@@ -56,35 +56,6 @@ class Messages extends Component {
     console.log("user in loaduser",this.state.users);
     console.log(this.state.users[1].name);
   }
-
-  // getMessages = (users) =>{
-  //   let data = [];
-  //   data.length = users.length;
-  //   let x = {};
-  //   users.forEach((user, index) => {
-  //       fetch('http://localhost:3000/messages',{
-  //           method: 'post',
-  //           headers: {'Content-type': 'application/json'},
-  //           body: JSON.stringify({
-  //             Cid: 2,
-  //             Uid: user.id
-  //         })
-  //       })
-  //       .then(response => {
-  //         return response.json()
-  //       })
-  //       .then(res =>{
-  //         console.log(res);
-  //         x = {
-  //           user_id: user.id,
-  //           content: res
-  //         }
-  //         data[index] = x;
-  //       })
-  //     });
-  //     this.setState({messages:data})
-  //     console.log("in load messages",this.state.messages[0]);
-  // }
 
   render() {
     if(this.state.users[1]) {

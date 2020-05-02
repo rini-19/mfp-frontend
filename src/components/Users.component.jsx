@@ -25,7 +25,7 @@ class Users extends Component {
       token = localStorage.getItem('token');
       console.log(token);
     }
-    fetch('/users',{
+    fetch('http://localhost:3000/users',{
         method: 'post',
         headers: {'Content-type': 'application/json',
                   'Authorization': 'Bearer ' + token}
@@ -50,6 +50,7 @@ class Users extends Component {
   render() {
     
     const responsiveColumns = [{ title: 'User ID', data: 'id' },
+      { title: 'fbid', data: 'fbid' },
       { title: 'User Name', data: 'name' },
       { title: 'Email', data: 'email' },
       { title: 'Phone', data: 'phone' }];
