@@ -25,7 +25,7 @@ class Users extends Component {
       token = localStorage.getItem('token');
       console.log(token);
     }
-    fetch('http://localhost:3000/users',{
+    fetch('https://mutualfundcalculator.in/nodejsApp/users',{
         method: 'post',
         headers: {'Content-type': 'application/json',
                   'Authorization': 'Bearer ' + token}

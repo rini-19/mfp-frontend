@@ -28,7 +28,7 @@ class Messages extends Component {
       token = localStorage.getItem('token');
       console.log(token);
     }
-    fetch('/users',{
+    fetch('https://mutualfundcalculator.in/nodejsApp/users',{
         method: 'post',
         headers: {'Content-type': 'application/json',
                   'Authorization':'Bearer ' + token }

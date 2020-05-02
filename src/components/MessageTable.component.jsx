@@ -91,7 +91,7 @@ const MessageTable = ({user_id=null, client_id=null}) =>{
       token = localStorage.getItem('token');
       console.log(token);
     }
-      fetch('/messages',{
+      fetch('https://mutualfundcalculator.in/nodejsApp/messages',{
           method: 'post',
           headers: {'Content-type': 'application/json',
                     'Authorization': 'Bearer ' + token},

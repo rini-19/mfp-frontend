@@ -30,7 +30,7 @@ class Services extends Component {
       token = localStorage.getItem('token');
       console.log(token);
     }
-    fetch('/services',{
+    fetch('https://mutualfundcalculator.in/nodejsApp/services',{
       method: 'post',
       headers: {'Content-type': 'application/json',
                 'Authorization': 'Bearer ' + token}
