@@ -3,13 +3,14 @@ import AdminLTE, {Sidebar, Navbar} from 'adminlte-2-react';
 import Users from '../components/Users.component';
 import Messages from '../components/Messages.component';
 import Services from '../components/Services.component';
+import Dashboard from '../components/Dashboard/dashboard.component'
 
 import {withRouter} from 'react-router-dom';
 
 const { Item, Header, UserPanel } = Sidebar;
 const {Entry} = Navbar;
 
-class Dashboard extends Component {
+class DashboardPage extends Component {
 
   constructor(props){
       super(props);
@@ -35,7 +36,7 @@ class Dashboard extends Component {
   render() {
     // console.log("in dashboard", this.props.clientData.id);
     return (
-      <AdminLTE title={["App", "Name"]} titleShort={["ap", "na"]} theme="blue" >
+      <AdminLTE title={["App", "Name"]} titleShort={["ap", "na"]} theme="blue" path="/mfp-frontend/dashboard" >
         <Navbar.Core>
           <Entry
             icon="fas-sign-out-alt" onClick = {this.logout}
@@ -52,8 +53,9 @@ class Dashboard extends Component {
         <Users path="/client-users" clientID = {this.props.clientData.id}/>
         <Messages path="/client-messages" clientID = {this.props.clientData.id}/>
         <Services path="/client-services" clientID = {this.props.clientData.id}/>
+        <Dashboard path="/mfp-frontend/dashboard" />
       </AdminLTE>
     );
   }
 }
-export default withRouter(Dashboard);
+export default withRouter(DashboardPage);

@@ -8,7 +8,8 @@ class Login extends Component {
 		super(props);
 		this.state = {
 			loginName: '',
-			loginPassword: ''
+			loginPassword: '',
+			valid: true
 		}
 	}
 
@@ -31,11 +32,16 @@ class Login extends Component {
 		})
 			.then(response => response.json())
 			.then(data => {
+				console.log(data)
 				if(data.id){
 					this.props.loadClient(data);
 					this.props.history.replace('/mfp-frontend/dashboard');
 				}
 				else 
+					this.setState({
+						loginName:'',
+						loginPassword:'',
+						valid: false});
 					console.log("login component", data);
 			})
 	}
@@ -44,17 +50,20 @@ class Login extends Component {
 
 		return(
 			<div id = "loginform">
+				{
+					!this.state.valid && <p className='login-error'>Invalid name or password</p> 
+				}
 				<h2 id="headerTitle">Login</h2>
 				<div>
-					<div className="row">
+					<div className="login-row">
 						<label>Username</label>
 						<input onChange={this.onNameChange} type="text" placeholder="Enter username"/>
 					</div> 
-					<div className="row">
+					<div className="login-row">
 						<label>Password</label>
 						<input onChange={this.onPasswordChange} type="password" placeholder="Enter password"/>
 					</div> 
-					<div id="button" className="row">
+					<div id="login-button" className="login-row">
 						<button onClick={this.onSubmitChange}>Login Now</button>
 					</div>
 					<div id="alternativeLogin">

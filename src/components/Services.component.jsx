@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {
-  Content, Row, Box, SimpleTable, Col, Label, Inputs, Button,
+  Content, Row, Box, DataTable, Col, Label, Button,
 } from 'adminlte-2-react';
 
 class Services extends Component {
@@ -90,10 +90,22 @@ class Services extends Component {
       <Content title="Service Request Info">
         <Row>
           <Col xs={12}>
-            <Box noPadding customOptions={<Inputs.Text size="sm" buttonRight={<Button iconClass="fa-search" />} width="130px" placeholder="Search" />}>
-              <SimpleTable
-                columns={responsiveColumns}
+            <Box width="130px" >
+            <DataTable
+                columns={responsiveColumns.concat([{
+                  title: 'Actions',
+                  data: null,
+                  render: () => <Button text="Action" className="on-click-event" />,
+                }])}
                 data={responsiveData}
+                options={{
+
+                }}
+                onClickEvents={{
+                  onClickEvent: (data, rowIdx, rowData) => {
+                    debugger;
+                  },
+                }}
               />
             </Box>
           </Col>

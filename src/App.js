@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import Dashboard from './pages/dashboard.page';
+import DashboardPage from './pages/dashboard.page';
 import Login from './pages/login.page';
 
 class App extends Component {
@@ -50,7 +50,7 @@ class App extends Component {
             />
           } />
           <Route exact path = '/mfp-frontend/dashboard' render = {(props) =>
-            <Dashboard {...props}
+            <DashboardPage {...props}
               updateClient = {this.updateClient}
               clientData = {this.state.client}
               isLoggedIn = {this.state.client}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {
-  Content, Row, Box, SimpleTable, Col, Inputs, Button,
+  Content, Row, Box, DataTable, Col, Button,
 } from 'adminlte-2-react';
 
 class Users extends Component {
@@ -61,10 +61,22 @@ class Users extends Component {
       <Content title="User Info">
         <Row>
           <Col xs={12}>
-            <Box noPadding customOptions={<Inputs.Text size="sm" buttonRight={<Button iconClass="fa-search" />} width="130px" placeholder="Search" />}>
-              <SimpleTable
-                columns={responsiveColumns}
+            <Box width="130px" >
+              <DataTable
+                columns={responsiveColumns.concat([{
+                  title: 'Actions',
+                  data: null,
+                  render: () => <Button text="Action" className="on-click-event" />,
+                }])}
                 data={responsiveData}
+                options={{
+
+                }}
+                onClickEvents={{
+                  onClickEvent: (data, rowIdx, rowData) => {
+                    debugger;
+                  },
+                }}
               />
             </Box>
           </Col>

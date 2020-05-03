@@ -62,24 +62,25 @@ class Messages extends Component {
       let {name} = this.state.users[1];
       console.log("user in render",name);
     }
-    return (<Content title="Messages" subTitle="Getting started with adminlte-2-react" browserTitle="">
-      <Row>
-        <Col xs={12}>
-          {
-            this.state.users===undefined  ? 
-            console.log(this.state.users):
-                this.state.users.map ( ({id, name}, index) =>{
-                  return(
-                    <Box key={id} title={name} type="primary" collapsable={true} collapsed={true} > 
-                      {console.log("user",id)}
-                      <MessageTable user_id = {id} client_id = {this.props.clientID} len={this.state.users.length} />
-                    </Box>
-                  ) 
-                }) 
-          }
-        </Col>
-      </Row>
-    </Content>
+    return (
+      <Content title="Messages" subTitle="Getting started with adminlte-2-react" browserTitle="">
+        <Row>
+          <Col xs={12}>
+            {
+              this.state.users===undefined  ? 
+              console.log(this.state.users):
+                  this.state.users.map ( ({id, name}, index) =>{
+                    return(
+                      <Box key={id} title={name} type="primary" collapsable={true} collapsed={true} > 
+                        {console.log("user",id)}
+                        <MessageTable user_id = {id} client_id = {this.props.clientID} len={this.state.users.length} />
+                      </Box>
+                    ) 
+                  }) 
+            }
+          </Col>
+        </Row>
+      </Content>
     );
   }
 }
