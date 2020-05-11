@@ -30,13 +30,13 @@ class DashboardPage extends Component {
 
   logout = () =>{
     localStorage.clear();
-    this.props.history.replace('/');
+    this.props.history.replace('/mfp-frontend');
   }
 
   render() {
     // console.log("in dashboard", this.props.clientData.id);
     return (
-      <AdminLTE title={["App", "Name"]} titleShort={["ap", "na"]} theme="blue" path="/mfp-frontend/dashboard" >
+      <AdminLTE title={["App", "Name"]} titleShort={["ap", "na"]} theme="blue" homeTo={"/mfp-frontend/dashboard"}>
         <Navbar.Core>
           <Entry
             icon="fas-sign-out-alt" onClick = {this.logout}

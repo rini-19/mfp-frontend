@@ -48,7 +48,7 @@ class Dashboard extends Component {
 	render(){
 		const { showInfoModal, infoModalText } = this.state;
 		return(
-			<Content title="Dashboard" subTitle="Version 2.0">
+			<Content title="Dashboard" subTitle="Version 2.0" homeRoute="/mfp-frontend/dashboard">
 				<InfoModal show={showInfoModal} onHide={this.onHide} text={infoModalText} />
 				<Row >
           <UpperInfoBoxes />

@@ -11,6 +11,7 @@ class Users extends Component {
       users: [{
         id: null,
         name: '',
+        fbid: null,
         email:'',
         phone: null
       }]
@@ -58,7 +59,7 @@ class Users extends Component {
     console.log(responsiveData);
 
     return (
-      <Content title="User Info">
+      <Content title="User Info" homeRoute="/mfp-frontend/dashboard">
         <Row>
           <Col xs={12}>
             <Box width="130px" >

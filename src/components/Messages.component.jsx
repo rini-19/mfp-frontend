@@ -63,7 +63,7 @@ class Messages extends Component {
       console.log("user in render",name);
     }
     return (
-      <Content title="Messages" subTitle="Getting started with adminlte-2-react" browserTitle="">
+      <Content title="Messages" homeRoute="/mfp-frontend/dashboard" browserTitle="">
         <Row>
           <Col xs={12}>
             {

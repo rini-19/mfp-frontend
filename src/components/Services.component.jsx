@@ -87,7 +87,7 @@ class Services extends Component {
     const responsiveData = this.state.services;
 
     return (
-      <Content title="Service Request Info">
+      <Content title="Service Request Info" homeRoute="/mfp-frontend/dashboard">
         <Row>
           <Col xs={12}>
             <Box width="130px" >
