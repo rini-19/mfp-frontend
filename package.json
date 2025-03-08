@@ -10,7 +10,7 @@
     "adminlte-reactjs": "^1.0.6",
     "chart.js": "^2.9.3",
     "formik": "^2.1.4",
-    "pm2": "^4.4.0",
+    "pm2": "^5.4.3",
     "prop-types": "^15.7.2",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
